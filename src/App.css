@@ -59,9 +59,46 @@ main {
 }
 
 .meme-image {
-  width: 100%
+  width: 100%;
+  border-radius: 3px;
 }
 
 .form label {
   margin-right: 5px;
+}
+
+.meme {
+  position: relative
+}
+
+.meme-text {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  font-family: impact, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+
+.bottom {
+  bottom: 0
+}
+
+.top {
+  top: 0
 }
