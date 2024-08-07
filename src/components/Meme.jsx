@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Meme() {
 	const [meme, setMeme] = useState({
@@ -48,6 +48,7 @@ export default function Meme() {
 							name="topText"
 							value={meme.topText}
 							onChange={handleChange}
+							style={{ marginLeft: '10px' }}
 						>
 						</input>
 					</label>
@@ -60,7 +61,8 @@ export default function Meme() {
 							placeholder="Take my money"
 							name="bottomText"
 							value={meme.bottomText}
-							onChange={handleChange}>
+							onChange={handleChange}
+							style={{ marginLeft: '10px' }}>
 						</input>
 					</label>
 				</div>
